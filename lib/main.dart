@@ -7,8 +7,6 @@ void main() {
   runApp(MyApp());
 }
 
-final audioPlayer = AudioPlayer();
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
