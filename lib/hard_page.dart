@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:hattori/quiz_page.dart';
 import 'package:hattori/show_result.dart';
 import 'package:hattori/select_page.dart';
 
-class quiz_page extends StatefulWidget {
+class hard_page extends StatefulWidget {
   final List<Map<String, dynamic>> answeredQuestions; // 追加: 結果を受け取るためのリスト
-  const quiz_page({Key? key, required this.answeredQuestions})
+  const hard_page({Key? key, required this.answeredQuestions})
       : super(key: key);
 
   @override
-  _quiz_pageState createState() => _quiz_pageState();
+  _hard_pageState createState() => _hard_pageState();
 }
 
-class _quiz_pageState extends State<quiz_page> {
+class _hard_pageState extends State<hard_page> {
   int currentQuestionIndex = 0;
   bool showResult = false;
   bool correctAnswer = false;
@@ -33,15 +34,6 @@ class _quiz_pageState extends State<quiz_page> {
       'quote': '20210129「はじめてのふうぞく♪」より引用',
       'correctAnswer': ['ハットリ'],
       'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
-    },
-    {
-      'question': 'ハットリさんの邪魔になっちゃうから\nもう行こう！',
-      'choices': ['ハットリ', 'ニーチェ'],
-      'answer': 0,
-      'commentary': '気を遣われやすいハットリさん\n公園に集まっていた小学生へのネタ見せ後\n1人の小学生が彼に対して言い放った言葉',
-      'quote': '「何かが伝わっている」より引用',
-      'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/nb8dc6c26bcf7'
     },
     {
       'question': 'すべては徐々に遷移していく\n若干の変化を伴いながら\n少しずつ少しずつ人は変化していく',
@@ -342,7 +334,7 @@ class _quiz_pageState extends State<quiz_page> {
                           onPressed: () {
                             setState(() {
                               if (currentQuestionIndex <
-                                  randomizedQuestions.length - 3) {
+                                  randomizedQuestions.length - 2) {
                                 currentQuestionIndex++;
                                 showResult = false;
                               } else {
@@ -372,39 +364,11 @@ class _quiz_pageState extends State<quiz_page> {
   }
 }
 
-class MainPageButton extends StatelessWidget {
-  const MainPageButton({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      left: -5,
-      top: 35,
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          backgroundColor:
-              const Color.fromARGB(95, 234, 234, 234).withOpacity(0.4),
-          shape: const CircleBorder(),
-          padding: const EdgeInsets.all(12),
-        ),
-        onPressed: () {
-          Navigator.pop(context); // メインページに戻る
-        },
-        child: const Icon(
-          Icons.arrow_back,
-          color: Colors.black,
-          size: 20,
-        ),
-      ),
-    );
-  }
-}
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: quiz_page(
+      home: hard_page(
         answeredQuestions: [],
       ),
     );

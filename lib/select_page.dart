@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hattori/hard_page.dart';
 import 'package:hattori/quiz_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -205,7 +206,14 @@ class _select_pageState extends State<select_page> {
                             width: 40,
                           ),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const hard_page(
+                                            answeredQuestions: [],
+                                          )));
+                            },
                             style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10)),
