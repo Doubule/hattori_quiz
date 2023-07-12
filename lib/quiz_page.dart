@@ -25,14 +25,13 @@ class _quiz_pageState extends State<quiz_page> {
 
   final List<Map<String, dynamic>> questions = [
     {
-      'question': 'アンデス山脈中腹で\nたった今餓死した狐に\n誰が言葉を与える？',
+      'question': 'これだから\nオンライン街コン新参者は困る',
       'choices': ['ハットリ', 'ニーチェ'],
       'answer': 0,
-      'commentary':
-          '人生初風俗店で質問された内容を勘違いし\n見当はずれの答えをしたハットリさん\n己の行為を恥じたが吹っ切れる\nその状況を餓死した狐に例えた秀逸な表現',
-      'quote': '20210129「はじめてのふうぞく♪」より引用',
+      'commentary': '街コンで最初に誰と話すか\n予約できるシステムのことを\n蔑ろにする人たちへのハットリさんの言葉',
+      'quote': '「オンライン街コン」より引用',
       'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
+      'url': 'https://note.com/htysmyhan/n/n6b099012a21a'
     },
     {
       'question': 'ハットリさんの邪魔になっちゃうから\nもう行こう！',
@@ -44,33 +43,23 @@ class _quiz_pageState extends State<quiz_page> {
       'url': 'https://note.com/htysmyhan/n/nb8dc6c26bcf7'
     },
     {
-      'question': 'すべては徐々に遷移していく\n若干の変化を伴いながら\n少しずつ少しずつ人は変化していく',
+      'question': 'この部屋も一回くらい\nセックス見たかったよなぁ‥',
       'choices': ['ハットリ', 'ニーチェ'],
       'answer': 0,
-      'commentary': '初めて生でおっぱいを見た時に\n感情があまり変化しなかったことから\nハットリさんが感じ取ったこと',
-      'quote': '20210205「はじめてのふうぞく♪」より引用',
+      'commentary': '寮に入っていた頃,自分の部屋の元住人が\nヤリチンだったことを知ったときの\nハットリさんの気持ち',
+      'quote': '「部屋」より引用',
       'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/nbe01354a2a13'
+      'url': 'https://note.com/htysmyhan/n/n83430aefef0f'
     },
     {
-      'question': '形あるものが一瞬にして\n崩れ落ちるその瞬間こそ\nそのものが形あった時以上に美しい',
+      'question': 'あぁ‥そうなんですね\nそれキュリオスって言うんですね',
       'choices': ['ハットリ', 'ニーチェ'],
       'answer': 0,
       'commentary':
-          '25年間の童貞生活の果てに\n築き上げられたプライドが\n女性の乳房で己を窒息させる行為によって\n崩れ去る寸前のハットリさんの考え',
-      'quote': '20210502「the first soap」より引用',
+          '気に入られたい先輩との会話を盛り上げようと\n何とかボードゲームの話題に食いついたが\n嘘が露呈してしまった時に出た言葉',
+      'quote': '「ボードゲーム好き」より引用',
       'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/ne4598c0dfe8f'
-    },
-    {
-      'question': '与えれた役目があるならば\nそれ以上でもそれ以下でもなく\nその役目としての仕事をすることが\n求められる。',
-      'choices': ['ハットリ', 'ニーチェ'],
-      'answer': 0,
-      'commentary':
-          '部活動紹介で予期せぬ展開から\n主役級の役を貰えそうになるが\n女子からの冷たい苦言でその状況を\n真っ向否定されたハットリさんに浮かんだ考え',
-      'quote': '「自分の役目」より引用',
-      'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
+      'url': 'https://note.com/htysmyhan/n/n7b84591dacc7'
     },
     {
       'question': '台本のないセックスがしたくて\nここにきたんだ',
@@ -82,16 +71,6 @@ class _quiz_pageState extends State<quiz_page> {
       'correctAnswer': ['ハットリ'],
       'url': 'https://note.com/htysmyhan/n/ncf1791c31f33'
     },
-    {
-      'question': '表情は言語を超越する',
-      'choices': ['ハットリ', 'ニーチェ'],
-      'answer': 0,
-      'commentary':
-          '異国にて男の子が「ワンダーランド」と\nハットリさんに唱え続けてしまう。\n困った表情を周りの外国人に向けると\nそれだけで何かが伝わった時に浮かんだ考え',
-      'quote': '「わんだーらんど」より引用',
-      'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/n7fd373a7c7d4'
-    }
   ];
 
   List<int> createRandomQuestionIndices(int length) {
@@ -188,7 +167,7 @@ class _quiz_pageState extends State<quiz_page> {
                 const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 32, 193, 251).withOpacity(0.3),
+                    color: Color.fromARGB(255, 32, 251, 76).withOpacity(0.3),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   width: 380,
@@ -335,14 +314,14 @@ class _quiz_pageState extends State<quiz_page> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             minimumSize: const Size(90, 80),
-                            backgroundColor: Color.fromARGB(255, 32, 193, 251)
+                            backgroundColor: Color.fromARGB(255, 32, 251, 76)
                                 .withOpacity(0.3),
                             elevation: 0,
                           ),
                           onPressed: () {
                             setState(() {
                               if (currentQuestionIndex <
-                                  randomizedQuestions.length - 3) {
+                                  randomizedQuestions.length - 1) {
                                 currentQuestionIndex++;
                                 showResult = false;
                               } else {

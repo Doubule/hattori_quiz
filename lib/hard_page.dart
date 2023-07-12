@@ -65,14 +65,14 @@ class _hard_pageState extends State<hard_page> {
       'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
     },
     {
-      'question': '台本のないセックスがしたくて\nここにきたんだ',
+      'question': '土壇場に立たされれば\n手近な幸せに手を伸ばすような奴は\n何したってうまくいかない',
       'choices': ['ハットリ', 'ニーチェ'],
       'answer': 0,
       'commentary':
-          'はじめてのふうぞくにて予定調和で\nありきたりな性行為に対して様々なことを悟り\n自問自答した後のハットリさんの気持ち',
-      'quote': '20210213「はじめてのふうぞく♪」より引用',
+          '風俗か自慰行為かで悩むハットリさんが\n風俗サイトの写真を見て興奮してしまい\n耐えきれず部屋で自慰行為\nその後,自責の念に駆られて浮かんだ考え',
+      'quote': '「風俗日和」より引用',
       'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/ncf1791c31f33'
+      'url': 'https://note.com/htysmyhan/n/n3fb0d25bda04'
     },
     {
       'question': '表情は言語を超越する',
@@ -83,7 +83,27 @@ class _hard_pageState extends State<hard_page> {
       'quote': '「わんだーらんど」より引用',
       'correctAnswer': ['ハットリ'],
       'url': 'https://note.com/htysmyhan/n/n7fd373a7c7d4'
-    }
+    },
+    {
+      'question': '人間は経験したものの中だけで\n世界を構築する',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          '深夜3時半に正常位の研究をするハットリさん\nうつ伏せの体勢をとった際に\n部活の体幹トレーニングを思い出してしまう\nその時ハットリさんに浮かんだ考え',
+      'quote': '「正常位のやり方」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/neb09cf754c0d'
+    },
+    {
+      'question': '人間の記憶に残るのは\n求めているものではない\n求めている時点で想像の範疇なのだ',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          'AVで尿道バイブを見たハットリさん\n嫌悪に満ちた驚きを抱いたが\n一向にその出来事が頭から離れなくなる\nその後,幼少期とも結びつけて生まれた考え',
+      'quote': '「尿道バイブ」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/nc126313333e8'
+    },
   ];
 
   List<int> createRandomQuestionIndices(int length) {
@@ -180,7 +200,7 @@ class _hard_pageState extends State<hard_page> {
                 const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 32, 193, 251).withOpacity(0.3),
+                    color: Color.fromARGB(255, 255, 1, 1).withOpacity(0.3),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   width: 380,
@@ -327,14 +347,14 @@ class _hard_pageState extends State<hard_page> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             minimumSize: const Size(90, 80),
-                            backgroundColor: Color.fromARGB(255, 32, 193, 251)
-                                .withOpacity(0.3),
+                            backgroundColor:
+                                Color.fromARGB(255, 255, 1, 1).withOpacity(0.3),
                             elevation: 0,
                           ),
                           onPressed: () {
                             setState(() {
                               if (currentQuestionIndex <
-                                  randomizedQuestions.length - 2) {
+                                  randomizedQuestions.length - 4) {
                                 currentQuestionIndex++;
                                 showResult = false;
                               } else {

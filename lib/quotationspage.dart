@@ -4,14 +4,13 @@ import 'package:flutter/material.dart';
 class QuotationsPage extends StatelessWidget {
   final List<Map<String, dynamic>> questions = [
     {
-      'question': 'アンデス山脈中腹で\nたった今餓死した狐に\n誰が言葉を与える？',
+      'question': 'これだから\nオンライン街コン新参者は困る',
       'choices': ['ハットリ', 'ニーチェ'],
       'answer': 0,
-      'commentary':
-          '人生初風俗店で質問された内容を勘違いし\n見当はずれの答えをしたハットリさん\n己の行為を恥じたが吹っ切れる\nその状況を餓死した狐に例えた秀逸な表現',
-      'quote': '20210129「はじめてのふうぞく♪」より引用',
+      'commentary': '街コンで最初に誰と話すか\n予約できるシステムのことを\n蔑ろにする人たちへのハットリさんの言葉',
+      'quote': '「オンライン街コン」より引用',
       'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
+      'url': 'https://note.com/htysmyhan/n/n6b099012a21a'
     },
     {
       'question': 'ハットリさんの邪魔になっちゃうから\nもう行こう！',
@@ -21,6 +20,45 @@ class QuotationsPage extends StatelessWidget {
       'quote': '「何かが伝わっている」より引用',
       'correctAnswer': ['ハットリ'],
       'url': 'https://note.com/htysmyhan/n/nb8dc6c26bcf7'
+    },
+    {
+      'question': 'この部屋も一回くらい\nセックス見たかったよなぁ‥',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary': '寮に入っていた頃,自分の部屋の元住人が\nヤリチンだったことを知ったときの\nハットリさんの気持ち',
+      'quote': '「部屋」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/n83430aefef0f'
+    },
+    {
+      'question': 'あぁ‥そうなんですね\nそれキュリオスって言うんですね',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          '気に入られたい先輩との会話を盛り上げようと\n何とかボードゲームの話題に食いついたが\n嘘が露呈してしまった時に出た言葉',
+      'quote': '「ボードゲーム好き」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/n7b84591dacc7'
+    },
+    {
+      'question': '台本のないセックスがしたくて\nここにきたんだ',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          'はじめてのふうぞくにて予定調和で\nありきたりな性行為に対して様々なことを悟り\n自問自答した後のハットリさんの気持ち',
+      'quote': '20210213「はじめてのふうぞく♪」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/ncf1791c31f33'
+    },
+    {
+      'question': 'アンデス山脈中腹で\nたった今餓死した狐に\n誰が言葉を与える？',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          '人生初風俗店で質問された内容を勘違いし\n見当はずれの答えをしたハットリさん\n己の行為を恥じたが吹っ切れる\nその状況を餓死した狐に例えた秀逸な表現',
+      'quote': '20210129「はじめてのふうぞく♪」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
     },
     {
       'question': 'すべては徐々に遷移していく\n若干の変化を伴いながら\n少しずつ少しずつ人は変化していく',
@@ -52,14 +90,14 @@ class QuotationsPage extends StatelessWidget {
       'url': 'https://note.com/htysmyhan/n/n92fbcd78a3f2'
     },
     {
-      'question': '台本のないセックスがしたくて\nここにきたんだ',
+      'question': '土壇場に立たされれば\n手近な幸せに手を伸ばすような奴は\n何したってうまくいかない',
       'choices': ['ハットリ', 'ニーチェ'],
       'answer': 0,
       'commentary':
-          'はじめてのふうぞくにて予定調和で\nありきたりな性行為に対して様々なことを悟り\n自問自答した後のハットリさんの気持ち',
-      'quote': '20210213「はじめてのふうぞく♪」より引用',
+          '風俗か自慰行為かで悩むハットリさんが\n風俗サイトの写真を見て興奮してしまい\n耐えきれず部屋で自慰行為\nその後,自責の念に駆られて浮かんだ考え',
+      'quote': '「風俗日和」より引用',
       'correctAnswer': ['ハットリ'],
-      'url': 'https://note.com/htysmyhan/n/ncf1791c31f33'
+      'url': 'https://note.com/htysmyhan/n/n3fb0d25bda04'
     },
     {
       'question': '表情は言語を超越する',
@@ -70,7 +108,27 @@ class QuotationsPage extends StatelessWidget {
       'quote': '「わんだーらんど」より引用',
       'correctAnswer': ['ハットリ'],
       'url': 'https://note.com/htysmyhan/n/n7fd373a7c7d4'
-    }
+    },
+    {
+      'question': '人間は経験したものの中だけで\n世界を構築する',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          '深夜3時半に正常位の研究をするハットリさん\nうつ伏せの体勢をとった際に\n部活の体幹トレーニングを思い出してしまう\nその時ハットリさんに浮かんだ考え',
+      'quote': '「正常位のやり方」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/neb09cf754c0d'
+    },
+    {
+      'question': '人間の記憶に残るのは\n求めているものではない\n求めている時点で想像の範疇なのだ',
+      'choices': ['ハットリ', 'ニーチェ'],
+      'answer': 0,
+      'commentary':
+          'AVで尿道バイブを見たハットリさん\n嫌悪に満ちた驚きを抱いたが\n一向にその出来事が頭から離れなくなる\nその後,幼少期とも結びつけて生まれた考え',
+      'quote': '「尿道バイブ」より引用',
+      'correctAnswer': ['ハットリ'],
+      'url': 'https://note.com/htysmyhan/n/nc126313333e8'
+    },
   ];
 
   void _showCommentaryDialog(
